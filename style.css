@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#0d0d0d;
+    color:#fff;
+}
+
+/* HEADER */
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:rgba(0,0,0,.85);
+    z-index:1000;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#fff;
+}
+
+.logo span{
+    color:#FFD700;
+}
+
+nav a{
+    color:#fff;
+    margin-left:25px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#FFD700;
+}
+
+/* BANNER */
+.banner{
+    height:100vh;
+    background:url("imagens/banner.jpg") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.65);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.overlay h1{
+    font-size:65px;
+    color:#FFD700;
+}
+
+.overlay p{
+    max-width:700px;
+    font-size:20px;
+    margin:20px 0;
+}
+
+.btn{
+    background:#FFD700;
+    color:#000;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#fff;
+    transform:scale(1.05);
+}
+
+/* SEÇÕES */
+section{
+    padding:90px 10%;
+    text-align:center;
+}
+
+h2{
+    color:#FFD700;
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+/* CARDS */
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#1c1c1c;
+    padding:35px;
+    border-radius:15px;
+    width:250px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #FFD700;
+}
+
+.card h3{
+    color:#FFD700;
+}
+
+.card h1{
+    margin:15px 0;
+}
+
+.destaque{
+    border:2px solid #FFD700;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    padding:60px 20px;
+}
+
+.copy{
+    margin-top:20px;
+    color:#888;
+}
