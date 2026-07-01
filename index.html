@@ -1,16 +1,64 @@
-<section class="banner" id="inicio">
+---
 
-    <div class="overlay">
+### 2. `index.html`
+*A estrutura principal do seu site.*
 
-        <h1>SUPERE SEUS LIMITES</h1>
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerFit Academia | Seu Limite é a Sua Mente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <p>
-            A PowerFit Academia é o lugar ideal para transformar seu corpo com treinos modernos,
-            equipamentos de alta qualidade e profissionais especializados.
-        </p>
+    <header>
+        <div class="logo">Power<span>Fit</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <a href="#planos" class="btn">COMEÇAR AGORA</a>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Transforme seu corpo, mude sua mente.</h1>
+            <p>A melhor estrutura e os melhores profissionais para você alcançar seus objetivos.</p>
+            <a href="#planos" class="btn">Conheça os Planos</a>
+        </div>
+    </section>
 
-    </div>
+    <section id="planos" class="plans">
+        <h2>Nossos Planos</h2>
+        <div class="plans-container">
+            <div class="plan-card">
+                <h3>Plano Silver</h3>
+                <p class="price">R$ 89,90/mês</p>
+                <ul>
+                    <li>Acesso à musculação</li>
+                    <li>Área de cardio</li>
+                </ul>
+            </div>
+            <div class="plan-card premium">
+                <h3>Plano Gold</h3>
+                <p class="price">R$ 129,90/mês</p>
+                <ul>
+                    <li>Acesso livre 24h</li>
+                    <li>Todas as aulas coletivas</li>
+                    <li>Avaliação física inclusa</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-</section>
+    <footer>
+        <p>&copy; 2026 PowerFit Academia. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
