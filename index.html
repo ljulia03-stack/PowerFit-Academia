@@ -1,15 +1,10 @@
----
-
-### 2. `index.html`
-*A estrutura principal do seu site.*
-
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PowerFit Academia | Seu Limite é a Sua Mente</title>
+    <title>PowerFit | Alta Performance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,6 +14,7 @@
         <nav>
             <ul>
                 <li><a href="#home">Início</a></li>
+                <li><a href="#vantagens">Vantagens</a></li>
                 <li><a href="#planos">Planos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -27,37 +23,87 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Transforme seu corpo, mude sua mente.</h1>
-            <p>A melhor estrutura e os melhores profissionais para você alcançar seus objetivos.</p>
-            <a href="#planos" class="btn">Conheça os Planos</a>
+            <span class="tagline">CONSTRUA SUA MELHOR VERSÃO</span>
+            <h1>Treine com os Melhores</h1>
+            <p>Estrutura de ponta, ambiente climatizado e professores prontos para acelerar seus resultados.</p>
+            <a href="#planos" class="btn">Matricule-se Agora</a>
+        </div>
+    </section>
+
+    <section id="vantagens" class="features">
+        <h2>Por que escolher a <span>PowerFit</span>?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fa-solid fa-dumbbell"></i>
+                <h3>Equipamentos Premium</h3>
+                <p>Maquinários de última geração importados para maior eficiência biomecânica.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-clock"></i>
+                <h3>Horário Flexível</h3>
+                <p>Aberta de domingo a domingo com horários estendidos para se adaptar à sua rotina.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-user-doctor"></i>
+                <h3>Suporte Profissional</h3>
+                <p>Treinadores certificados prontos para montar seu treino e corrigir sua postura.</p>
+            </div>
         </div>
     </section>
 
     <section id="planos" class="plans">
-        <h2>Nossos Planos</h2>
+        <h2>Escolha seu <span>Plano</span></h2>
+        <p class="sub">Sem taxas ocultas. Cancele quando quiser.</p>
+        
         <div class="plans-container">
             <div class="plan-card">
-                <h3>Plano Silver</h3>
-                <p class="price">R$ 89,90/mês</p>
+                <h3>Plano Smart</h3>
+                <p class="price">R$ 99,90<span>/mês</span></p>
                 <ul>
-                    <li>Acesso à musculação</li>
-                    <li>Área de cardio</li>
+                    <li><i class="fa-solid fa-check"></i> Área de musculação e cardio</li>
+                    <li><i class="fa-solid fa-check"></i> Acesso à unidade de origem</li>
+                    <li class="disabled"><i class="fa-solid fa-xmark"></i> Aulas de Cross e Dança</li>
                 </ul>
+                <a href="#" class="btn btn-outline">Selecionar</a>
             </div>
+
             <div class="plan-card premium">
-                <h3>Plano Gold</h3>
-                <p class="price">R$ 129,90/mês</p>
+                <div class="badge">MAIS VENDIDO</div>
+                <h3>Plano Black</h3>
+                <p class="price">R$ 139,90<span>/mês</span></p>
                 <ul>
-                    <li>Acesso livre 24h</li>
-                    <li>Todas as aulas coletivas</li>
-                    <li>Avaliação física inclusa</li>
+                    <li><i class="fa-solid fa-check"></i> Acesso total a todas as áreas</li>
+                    <li><i class="fa-solid fa-check"></i> Aulas coletivas inclusas</li>
+                    <li><i class="fa-solid fa-check"></i> Leve 1 amigo 4x por mês</li>
                 </ul>
+                <a href="#" class="btn">Garantir Vaga</a>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 PowerFit Academia. Todos os direitos reservados.</p>
+    <footer id="contato">
+        <div class="footer-content">
+            <div class="footer-box">
+                <div class="logo">Power<span>Fit</span></div>
+                <p>Seu limite é a sua mente.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Contato</h3>
+                <p><i class="fa-solid fa-phone"></i> (11) 99999-9999</p>
+                <p><i class="fa-solid fa-envelope"></i> contato@powerfit.com</p>
+            </div>
+            <div class="footer-box">
+                <h3>Redes Sociais</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2026 PowerFit Academia. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
 </body>
