@@ -7,12 +7,14 @@
 }
 
 :root {
-    --bg-principal: #0b0b0b;
-    --bg-secundario: #161616;
-    --cor-destaque: #ff4500; /* Laranja Neon */
-    --cor-texto: #ffffff;
-    --cor-mutado: #a0a0a0;
+    :root {
+    --bg-principal: #0b0f19;      /* Fundo ultra escuro */
+    --bg-secundario: #111827;     /* Fundo dos cards e seções */
+    --cor-texto: #f3f4f6;          /* Texto principal claro */
+    --cor-mutado: #9ca3af;         /* Texto secundário/apagado */
+    --cor-destaque: #3b82f6;       /* Azul elétrico para botões, links e ícones */
 }
+
 
 body {
     background-color: var(--bg-principal);
