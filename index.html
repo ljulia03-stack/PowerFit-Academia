@@ -4,41 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academia PowerFit</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    
+    <style>
+        /* Reset básico e Fontes */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-    <header>
-        <div class="logo">POWER<span>FIT</span></div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#modalidades">Modalidades</a></li>
-                <li><a href="#planos">Planos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
 
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>TRANSFORME SEU CORPO, <span>SUPERE SEUS LIMITES</span></h1>
-            <p>A melhor estrutura e os melhores profissionais para você alcançar seus objetivos.</p>
-            <a href="#planos" class="btn">Matricule-se Já</a>
-        </div>
-    </section>
+        /* Cores do Tema */
+        :root {
+            --primary-color: #ff9900; /* Laranja/Amarelo vibrante */
+            --bg-dark: #1a1a1a;
+            --bg-card: #242424;
+            --text-light: #f4f4f4;
+        }
 
-    <section id="modalidades" class="services">
-        <h2>Nossas <span>Modalidades</span></h2>
-        <div class="cards-container">
-            <div class="card">
-                <h3>Musculação</h3>
-                <p>Equipamentos modernos e acompanhamento individualizado para hipertrofia e força.</p>
-            </div>
-            <div class="card">
-                <h3>Cross Training</h3>
-                <p>Treinos de alta intensidade para melhorar seu condicionamento físico e resistência.</p>
-            </div>
-            <div class="card">
-                <h3>Aulas em Grupo</h3>
-                <p
+        /* Cabeçalho */
+        header {
+            background-color: var(--bg-dark);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            border-bottom: 2px solid var(--primary-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: 0.3s;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: var(--primary-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul
