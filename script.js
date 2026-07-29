@@ -1,18 +1,54 @@
-// Aguarda o documento carregar completamente
-document.addEventListener("DOMContentLoaded", () => {
-    
-    // Seleciona todos os botões de inscrição dos planos
-    const botoesPlanos = document.querySelectorAll(".plan-card .btn");
+// Aguarda o carregamento completo do documento
+document.addEventListener('DOMContentLoaded', () => {
 
-    botoesPlanos.forEach(botao => {
-        botao.addEventListener("click", (event) => {
-            event.preventDefault(); // Impede o link de recarregar a página
-            
-            // Pega o nome do plano correspondente ao botão clicado
-            const nomePlano = botao.parentElement.querySelector("h3").innerText;
-            
-            // Exibe uma mensagem de sucesso para o usuário
-            alert(`Obrigado pelo interesse! Você escolheu o ${nomePlano}. Em breve nossa equipe entrará em contato para finalizar sua matrícula na PowerFit!`);
+    // 1. Rolagem Suave para os Links do Menu
+    const menuLinks = document.querySelectorAll('nav a, .btn');
+
+    menuLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const targetId = link.getAttribute('href');
+
+            // Verifica se é um link interno (começa com #)
+            if (targetId && targetId.startsWith('#')) {
+                e.preventDefault(); // Impede o salto abrupto padrão
+                
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
         });
     });
+
+    // 2. Mudança de Estilo no Cabeçalho ao Rolar
+    const header = document.querySelector('header');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.style.backgroundColor = 'rgba(26, 26, 26, 0.95)';
+            header.style.boxShadow = '0 4px 10px rgba(0,0,0,0.5)';
+        } else {
+            header.style.backgroundColor = 'var(--bg-dark)';
+            header.style.boxShadow = 'none';
+        }
+    });
+
+    // 3. Interatividade nos Botões de Assinatura de Planos
+    const planButtons = document.querySelectorAll('.btn-plan');
+
+    planButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            // Pega o nome do plano selecionado
+            const card = button.closest('.card-plan');
+            const planName = card.querySelector('h3').innerText;
+
+            alert(`Deseja iniciar sua matrícula no ${planName}?\nEm breve entraremos em contato!`);
+        });
+    });
+
 });
