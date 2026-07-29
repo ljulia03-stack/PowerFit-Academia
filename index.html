@@ -3,58 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academia PowerFit</title>
+    <title>APEX FITNESS | Alta Performance</title>
     
-    <style>
-        /* Reset básico e Fontes */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        body {
-            background-color: #121212;
-            color: #ffffff;
-            line-height: 1.6;
-        }
+    <header id="header">
+        <div class="logo">APEX<span>FIT</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#modalidades">Modalidades</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        /* Cores do Tema */
-        :root {
-            --primary-color: #ff9900; /* Laranja/Amarelo vibrante */
-            --bg-dark: #1a1a1a;
-            --bg-card: #242424;
-            --text-light: #f4f4f4;
-        }
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="hero-badge"><i class="fa-solid fa-bolt"></i> O Futuro do Fitness</span>
+            <h1>Evolua Além dos Seus <span>Limites</span></h1>
+            <p>Infraestrutura de última geração, treinos altamente personalizados e biomecânica avançada para resultados extraordinários.</p>
+            <button class="btn-primary open-modal"><i class="fa-solid fa-fire"></i> Começar Agora</button>
+        </div>
+    </section>
 
-        /* Cabeçalho */
-        header {
-            background-color: var(--bg-dark);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 8%;
-            border-bottom: 2px solid var(--primary-color);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            transition: 0.3s;
-        }
+    <div class="stats-bar">
+        <div class="stat-item">
+            <h3>+1500m²</h3>
+            <p>Área de Treino</p>
+        </div>
+        <div class="stat-item">
+            <h3>100%</h3>
+            <p>Equipamentos Importados</p>
+        </div>
+        <div class="stat-item">
+            <h3>24/7</h3>
+            <p>Acesso Liberado</p>
+        </div>
+    </div>
 
-        .logo {
-            font-size: 28px;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
+    <section id="modalidades">
+        <div class="section-title">
+            <h2>Nossas <span>Modalidades</span></h2>
+            <p>Programas projetados para acelerar seus resultados de performance e estética</p>
+        </div>
 
-        .logo span {
-            color: var(--primary-color);
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-
-        nav ul
+        <div class="grid-cards">
+            <div class="card-service">
+                <i class="fa-solid fa-dumbbell card-icon"></i>
+                <h3>Musculação High-Tech</h3>
+                <p>Maquinário com ajuste biomecânico de precisão para máxima ativação muscular e redução de lesões.</p>
+            </div>
+            <div class="card-service">
+                <i class="fa-solid fa-heart-pulse card-icon"></i>
+                <h3>Cardio de Alta Intensidade</h3>
+                <p>Área cardiovascular integrada com monitores cardíacos em tempo real e simulação de terrenos.</p
